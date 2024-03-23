@@ -14,14 +14,13 @@ body {
     padding: 0;
 }
 
-/* chano */
-
 textarea {
     min-width: 80%;
     border: none;
     color: #0a3871;
     font-size: 30px;
     resize: none;
+    text-transform: lowercase;
 }
 
 textarea:focus {
