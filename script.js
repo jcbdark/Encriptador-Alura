@@ -66,11 +66,17 @@ const encriptar = (stringEncriptado) => {
 
 const desencriptar = (stringDesencriptado) => {
     let matrizCodigo = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']];
+    let incluye = []
+
     stringDesencriptado = stringDesencriptado.toLowerCase();
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (stringDesencriptado.includes(matrizCodigo[i][1])) {
-            stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
+            incluye.push(matrizCodigo[i]);
         }
+    }
+
+    for (let i = 0; i < incluye.length; i++) {
+        stringDesencriptado = stringDesencriptado.replaceAll(incluye[i][1], incluye[i][0]);
     }
     return stringDesencriptado;
 }
