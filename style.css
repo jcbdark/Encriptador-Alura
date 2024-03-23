@@ -4,14 +4,17 @@
 }
 
 html {
-    height: 100%;
     background: #f3f5fc;
 }
 
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+header {
+    position: absolute;
+    top: 30px;
 }
 
 textarea {
@@ -38,7 +41,7 @@ textarea:focus {
 }
 
 .container {
-    height: 100vh;
+    height: 100dvh;
     padding: 2em;
     display: flex;
     justify-content: space-evenly;
@@ -67,7 +70,7 @@ textarea:focus {
 
 .btn {
     height: 67px;
-    width: 328px;
+    width: 15em;
     cursor: pointer;
     border-radius: 24px;
     border: 1px solid #0a3871;
@@ -137,4 +140,51 @@ textarea:focus {
 
 .oculto {
     display: none;
+}
+
+@media (max-width: 1112px) {
+    .container {
+        margin-top: 4em;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    .container-pregunta {
+        height: 70%;
+        width: 100%;
+    }
+
+    .container-respuesta {
+        height: 30%;
+        width: 100%;
+    }
+
+    .btn{
+        width: 10em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        height: fit-content;
+        margin-top: 4em;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-pregunta {
+        height: 50%;
+        width: 100%;
+    }
+
+    .container-respuesta {
+        height: 50%;
+        width: 100%;
+    }
+
+    .btn{
+        width: 8em;
+    }
 }
