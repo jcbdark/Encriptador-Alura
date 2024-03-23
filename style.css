@@ -13,7 +13,6 @@ body {
 }
 
 header {
-    position: absolute;
     top: 30px;
 }
 
@@ -47,10 +46,6 @@ textarea:focus {
     justify-content: space-evenly;
 }
 
-.logo {
-    width: 120px;
-    height: 48px;
-}
 
 .container-pregunta {
     height: 100% !important;
